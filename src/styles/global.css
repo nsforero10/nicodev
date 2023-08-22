@@ -1,3 +1,46 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Russo+One:,wght@0,400&display=swap"); */
+
+:root {
+  --black: #212121;
+  --white: #ffffff;
+  --gray: #a1a1a1;
+  --teal: #14ffec;
+  --dark-teal: #0d7377;
+}
+
+@layer base {
+  html {
+    font-family: Roboto Mono;
+    color: white;
+  }
+}
+
+h1 {
+  color: var(--black);
+  text-shadow:
+    -1px -1px 0 var(--teal),
+    1px -1px 0 var(--teal),
+    -1px 1px 0 var(--teal),
+    1px 1px 0 var(--teal);
+}
+
+.dark {
+  color: var(--black);
+  text-shadow:
+    -1px -1px 0 var(--dark-teal),
+    1px -1px 0 var(--dark-teal),
+    -1px 1px 0 var(--dark-teal),
+    1px 1px 0 var(--dark-teal);
+}
+
+.bottom-shine {
+  background-image: radial-gradient(
+    50% 100% at 50% 100%,
+    #16484a 0%,
+    rgba(22, 72, 74, 0) 100%
+  );
+}
