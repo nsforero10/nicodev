@@ -46,10 +46,10 @@ export default function NavBar({ currentPage }: NavBarProps) {
           //Contact
         </button>
         <button
-          className="block  absolute top-6 right-4"
+          className="block  absolute top-6 right-4 rounded-full border border-dark-teal text-teal w-8 h-8 font-bold"
           onClick={() => setShowDrawer(true)}
         >
-          Bars
+          i
         </button>
       </nav>
       <Drawer open={showDrawer} onClose={() => setShowDrawer(false)}>
