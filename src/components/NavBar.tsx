@@ -59,7 +59,10 @@ export default function NavBar({ currentPage }: NavBarProps) {
           <Link to="/projects">//Projects</Link> */}
           <button
             className="text-left"
-            onClick={() => setShowContactForm(true)}
+            onClick={() => {
+              setShowDrawer(false);
+              setShowContactForm(true);
+            }}
           >
             //Contact
           </button>

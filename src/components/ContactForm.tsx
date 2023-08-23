@@ -9,7 +9,9 @@ interface ContactFormProps {
 export default function ContactForm({ open, onClose }: ContactFormProps) {
   return (
     <Backdrop open={open}>
-      <div className="flex flex-col z-200 bg-gray text-teal w-3/4 max-w-3xl min-w-[320px] p-8">
+      <div
+        className={`flex flex-col z-50 bg-gray bg-center bg-no-repeat bg-cover text-teal w-3/4 max-w-3xl min-w-[320px] p-8`}
+      >
         <div className="w-full flex justify-end">
           <button className="static right-4" onClick={onClose}>
             X
@@ -24,7 +26,7 @@ export default function ContactForm({ open, onClose }: ContactFormProps) {
           <div className="flex flex-col md:flex-row w-full gap-4">
             <input
               required
-              className="bg-black p-2 text-light-gray w-full focus:outline-none focus:border-teal focus:border"
+              className="bg-black py-2 px-4 text-light-gray w-full focus:outline-none focus:border-teal focus:border"
               type="text"
               name="name"
               id="name"
@@ -32,7 +34,7 @@ export default function ContactForm({ open, onClose }: ContactFormProps) {
             />
             <input
               required
-              className="bg-black p-2 text-light-gray w-full focus:outline-none focus:border-teal focus:border"
+              className="bg-black py-2 px-4 text-light-gray w-full focus:outline-none focus:border-teal focus:border"
               type="text"
               name="email"
               id="email"
@@ -41,7 +43,7 @@ export default function ContactForm({ open, onClose }: ContactFormProps) {
           </div>
           <input
             required
-            className="bg-black p-2 text-light-gray focus:outline-none focus:border-teal focus:border"
+            className="bg-black py-2 px-4 text-light-gray focus:outline-none focus:border-teal focus:border"
             type="text"
             name="subject"
             id="subject"
@@ -49,18 +51,20 @@ export default function ContactForm({ open, onClose }: ContactFormProps) {
           />
           <textarea
             required
-            className="bg-black p-2 text-light-gray focus:outline-none focus:border-teal focus:border"
+            className="bg-black py-2 px-4 text-light-gray focus:outline-none focus:border-teal focus:border"
             name="message"
             id="message"
             rows={5}
             placeholder="Message"
           />
-          <button
-            type="submit"
-            className="bg-teal text-black font-bold py-2 w-1/2 min-w-[260px]"
-          >
-            Send message
-          </button>
+          <div className="w-full flex justify-end">
+            <button
+              type="submit"
+              className="bg-teal text-lg text-gray hover:animate-bounce font-bold py-2 w-1/2 min-w-[260px]"
+            >
+              SEND
+            </button>
+          </div>
         </form>
       </div>
     </Backdrop>

@@ -9,15 +9,18 @@ interface DrawerProps {
 
 export default function Drawer({ open, onClose, children }: DrawerProps) {
   return (
-    <Backdrop open={open}>
+    <>
+      <Backdrop open={open} />
       <div
-        className={`sidebar fixed w-80 h-full top-0 right-0 flex flex-col z-200 bg-teal pt-14 px-4`}
+        className={`fixed w-80 h-full top-0 right-0 flex flex-col bg-teal pt-14 px-4 transform transition-transform duration-500 delay-150 z-20 ${
+          open ? "translate-x-0" : "translate-x-full"
+        }`}
       >
         <button className="absolute top-4 right-4 text-black" onClick={onClose}>
           X
         </button>
         {children}
       </div>
-    </Backdrop>
+    </>
   );
 }

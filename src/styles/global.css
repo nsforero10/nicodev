@@ -6,7 +6,8 @@
 :root {
   --black: #212121;
   --white: #ffffff;
-  --gray: #a1a1a1;
+  --gray: #323232;
+  --light-gray: #a1a1a1;
   --teal: #14ffec;
   --dark-teal: #0d7377;
 }
@@ -53,7 +54,7 @@ textarea:-webkit-autofill:focus,
 select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
-  -webkit-text-fill-color: #a1a1a1;
+  -webkit-text-fill-color: var(--white);
   -webkit-box-shadow: 0 0 0px 1000px #212121 inset;
   transition: background-color 5000s ease-in-out 0s;
   font-family: inherit !important;
