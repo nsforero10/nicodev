@@ -44,7 +44,7 @@ const AboutPage = () => {
   const [showContactForm, setShowContactForm] = React.useState(false);
   return (
     <>
-      <main className="flex flex-col items-center bg-black bg-about-pattern bg-no-repeat bg-cover lg:h-screen">
+      <main className="flex flex-col items-center bg-black bg-about-pattern bg-no-repeat bg-cover min-h-screen">
         <NavBar currentPage="about" />
         <section className="flex flex-col grow pt-24 w-full">
           <h1 className="text-4xl font-display mt-4 text-center">ABOUT PAGE</h1>

@@ -11,11 +11,11 @@ const HomePage: React.FC<PageProps> = () => {
     <>
       <main className="flex flex-col items-center bg-black">
         <NavBar currentPage="home" />
-        <section className="w-full h-screen max-w-[1440px] flex flex-col justify-evenly items-center pt-24">
+        <section className="w-full min-h-screen max-w-[1440px] flex flex-col justify-evenly items-center pt-24">
           <article className="w-full flex flex-col-reverse lg:flex-row items-center z-[3]">
             <img
               src="nico-photo.png"
-              className="w-4/5 sm:w-1/2 lg:3/4 h-auto "
+              className="w-4/5 sm:w-1/2 lg:3/4 h-auto pb-12"
               alt="Nico photo within cirlces"
             />
             <div className="w-full grow flex flex-col items-start lg:items-end px-6 lg:pr-14">
@@ -46,7 +46,7 @@ const HomePage: React.FC<PageProps> = () => {
             <div className="relative bottom-12 left-2 border-2 border-solid border-dark-teal h-14 w-56 z-[1]"></div>
           </div>
         </section>
-        <div className="h-[40vh]  hidden lg:block absolute bottom-0 w-full bottom-shine z-[0]" />
+        <div className="h-[40vh] block fixed bottom-0 w-full bottom-shine z-[0]" />
       </main>
       <ContactForm
         open={showContactForm}
