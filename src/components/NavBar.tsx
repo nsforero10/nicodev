@@ -13,7 +13,7 @@ export default function NavBar({ currentPage }: NavBarProps) {
   const [showContactForm, setShowContactForm] = React.useState(false);
   return (
     <>
-      <nav className="w-full bg-black py-9 flex justify-center gap-10 text-xl font-light text-light-gray fixed ">
+      <nav className="w-full bg-black py-9 flex justify-center gap-10 text-xl font-light text-light-gray fixed z-10">
         <Link to="/">
           <NIconOutline className="absolute top-6 left-1 lg:left-8 h-8 lg:h-12 cursor-pointer" />
         </Link>
