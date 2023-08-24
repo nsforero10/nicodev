@@ -19,6 +19,9 @@ module.exports = {
         "dark-teal": { DEFAULT: "#0D7377", 50: "#0D737780" },
       },
       plugins: [],
+      backgroundImage: {
+        "about-pattern": "url('/background-waves.svg')",
+      },
     },
   },
 };

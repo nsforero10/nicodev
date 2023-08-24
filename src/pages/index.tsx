@@ -15,7 +15,7 @@ const HomePage: React.FC<PageProps> = () => {
           <article className="w-full flex flex-col-reverse lg:flex-row items-center z-[3]">
             <img
               src="nico-photo.png"
-              className="w-4/5 sm:w-1/2 lg:3/4 h-auto lg:h-[600px]"
+              className="w-4/5 sm:w-1/2 lg:3/4 h-auto "
               alt="Nico photo within cirlces"
             />
             <div className="w-full grow flex flex-col items-start lg:items-end px-6 lg:pr-14">

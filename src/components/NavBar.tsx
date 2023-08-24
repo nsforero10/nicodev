@@ -1,7 +1,7 @@
 import * as React from "react";
 import NIconOutline from "../assets/n-logo-outline.svg";
 import Drawer from "./Drawer";
-import { Link } from "gatsby";
+import { HeadFC, Link } from "gatsby";
 import ContactForm from "./ContactForm";
 
 interface NavBarProps {
@@ -23,7 +23,7 @@ export default function NavBar({ currentPage }: NavBarProps) {
         >
           //Home
         </Link>
-        {/* <Link
+        <Link
           to="/about"
           className={`${
             currentPage == "about" && "text-white"
@@ -31,7 +31,7 @@ export default function NavBar({ currentPage }: NavBarProps) {
         >
           //About
         </Link>
-        <Link
+        {/* <Link
           to="/projects"
           className={`${
             currentPage == "projects" && "text-white"
@@ -55,8 +55,8 @@ export default function NavBar({ currentPage }: NavBarProps) {
       <Drawer open={showDrawer} onClose={() => setShowDrawer(false)}>
         <div className="flex flex-col gap-4 text-black text-xl">
           <Link to="/">//Home</Link>
-          {/* <Link to="/about">//About</Link>
-          <Link to="/projects">//Projects</Link> */}
+          <Link to="/about">//About</Link>
+          {/* <Link to="/projects">//Projects</Link> */}
           <button
             className="text-left"
             onClick={() => {
