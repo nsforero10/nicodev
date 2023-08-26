@@ -21,6 +21,7 @@ module.exports = {
       plugins: [],
       backgroundImage: {
         "about-pattern": "url('/background-waves.svg')",
+        "projects-pattern": "url('/background-grid.svg')",
       },
     },
   },

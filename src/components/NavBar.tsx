@@ -1,8 +1,10 @@
 import * as React from "react";
 import NIconOutline from "../assets/n-logo-outline.svg";
 import Drawer from "./Drawer";
-import { HeadFC, Link } from "gatsby";
+import { Link } from "gatsby";
 import ContactForm from "./ContactForm";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 interface NavBarProps {
   currentPage: "home" | "about" | "projects";
@@ -31,14 +33,14 @@ export default function NavBar({ currentPage }: NavBarProps) {
         >
           //About
         </Link>
-        {/* <Link
+        <Link
           to="/projects"
           className={`${
             currentPage == "projects" && "text-white"
           } hidden md:block`}
         >
           //Projects
-        </Link> */}
+        </Link>
         <button
           className="text-teal hidden md:block"
           onClick={() => setShowContactForm(true)}
@@ -46,17 +48,17 @@ export default function NavBar({ currentPage }: NavBarProps) {
           //Contact
         </button>
         <button
-          className="block  absolute top-6 right-4 rounded-full border border-dark-teal text-teal w-8 h-8 font-bold"
+          className="block  absolute top-6 right-4 "
           onClick={() => setShowDrawer(true)}
         >
-          i
+          <FontAwesomeIcon className="text-2xl" icon={faBars} />
         </button>
       </nav>
       <Drawer open={showDrawer} onClose={() => setShowDrawer(false)}>
         <div className="flex flex-col gap-4 text-black text-xl">
           <Link to="/">//Home</Link>
           <Link to="/about">//About</Link>
-          {/* <Link to="/projects">//Projects</Link> */}
+          <Link to="/projects">//Projects</Link>
           <button
             className="text-left"
             onClick={() => {

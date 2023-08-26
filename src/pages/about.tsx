@@ -1,7 +1,7 @@
 import * as React from "react";
 import NavBar from "../components/NavBar";
 import ContactForm from "../components/ContactForm";
-import { HeadFC } from "gatsby";
+import { HeadFC, PageProps } from "gatsby";
 
 export const Head: HeadFC = () => <title>Nico - Software engineer</title>;
 
@@ -16,7 +16,7 @@ const skills = [
   },
   {
     name: "TypeScript",
-    percentage: "w-[90%]",
+    percentage: "w-[85%]",
   },
   {
     name: "Node",
@@ -28,7 +28,7 @@ const skills = [
   },
   {
     name: "Next.js",
-    percentage: "w-[80%]",
+    percentage: "w-[75%]",
   },
   {
     name: "Responsive design",
@@ -40,14 +40,14 @@ const skills = [
   },
 ];
 
-const AboutPage = () => {
+const AboutPage: React.FC<PageProps> = () => {
   const [showContactForm, setShowContactForm] = React.useState(false);
   return (
     <>
-      <main className="flex flex-col items-center bg-black bg-about-pattern bg-no-repeat bg-cover min-h-screen">
+      <main className="flex flex-col items-center bg-black  min-h-screen">
         <NavBar currentPage="about" />
-        <section className="flex flex-col grow pt-24 w-full">
-          <h1 className="text-4xl font-display mt-4 text-center">ABOUT PAGE</h1>
+        <section className="flex flex-col grow pt-24 w-full max-w-[1440px] bg-about-pattern bg-no-repeat bg-center bg-fit bg-fixed">
+          <h1 className="text-5xl font-display mt-4 text-center">ABOUT PAGE</h1>
           <div className="flex flex-col-reverse lg:flex-row grow mx-8 my-4 p-8 border border-teal gap-12">
             <article className="flex flex-col flex-1 items-center justify-between grow">
               <p className="font-thin text-lg">

@@ -10,7 +10,7 @@ interface DrawerProps {
 export default function Drawer({ open, onClose, children }: DrawerProps) {
   return (
     <>
-      <Backdrop open={open} />
+      <Backdrop open={open} onClose={onClose} />
       <div
         className={`fixed w-80 h-full top-0 right-0 flex flex-col bg-teal pt-14 px-4 transform transition-transform duration-500 delay-150 z-20 ${
           open ? "translate-x-0" : "translate-x-full"
