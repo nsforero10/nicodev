@@ -76,7 +76,7 @@ const AboutPage: React.FC<PageProps> = () => {
                 Learn more about me -{" "}
                 <a
                   download
-                  href="/nicolas-forero-cv.pdf"
+                  href="/Nicolas_Forero_Resume.pdf"
                   className="italic underline text-teal cursor-pointer"
                 >
                   Download my Resume{" "}
