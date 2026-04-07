@@ -51,9 +51,11 @@ const AboutPage: React.FC<PageProps> = () => {
           <div className="flex flex-col-reverse lg:flex-row grow mx-8 my-4 p-8 border border-teal gap-12">
             <article className="flex flex-col flex-1 items-center justify-between grow">
               <p className="font-thin text-lg">
-                I am a Bilingual{" "}
-                <span className="font-normal text-teal">Software Engineer</span>{" "}
-                with 3+ years of expertise in web and mobile development using{" "}
+                I am a{" "}
+                <span className="font-normal text-teal">
+                  Senior Software Engineer
+                </span>{" "}
+                with 6+ years of expertise in web and mobile development using{" "}
                 <strong>JavaScript</strong>, <strong>TypeScript</strong>, and{" "}
                 <strong>React</strong> frameworks such as{" "}
                 <strong>Next.js</strong>, as well as a working knowledge of{" "}
